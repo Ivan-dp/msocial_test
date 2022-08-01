@@ -15,7 +15,7 @@ module.exports = {
   },
   entry: {
     // index: path.resolve(__dirname, "./src/index.js"),
-    index: "./src/index.js",
+    index: "./src/pages/index/index.js",
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -24,7 +24,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "./src/index.pug",
+      template: "./src/pages/index/index.pug",
       chunks: ["index"],
     }),
     new CleanWebpackPlugin(),
