@@ -27,8 +27,8 @@ module.exports = {
       template: "./src/pages/index/index.pug",
       chunks: ["index"],
     }),
-    new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new CleanWebpackPlugin(),
   ],
   module: {
     rules: [
