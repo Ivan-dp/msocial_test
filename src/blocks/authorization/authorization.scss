@@ -1,0 +1,9 @@
+@import "/src/blocks/log-in-btn/log-in-btn.scss";
+@import "/src/blocks/sign-in-btn/sign-in-btn.scss";
+
+.authorization {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 227px;
+}
