@@ -17,7 +17,6 @@
 .wrapper {
   border: 1px dashed red;
   position: relative;
-  // top: 487px;
   height: 1180px;
   width: 1440px;
   overflow: hidden;
@@ -31,6 +30,9 @@
     height: 693px;
     margin-top: auto;
     margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
   }
 }
 

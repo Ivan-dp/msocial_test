@@ -1,4 +1,51 @@
 .action-rules {
   width: 100%;
-  height: 150px;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: 67px;
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__arrow-right {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-right: 3px solid #e30613;
+    border-bottom: 3px solid #e30613;
+    transform: rotate(-45deg);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // min-width: 128px;
+    max-width: 180px;
+  }
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+  }
+  &__description {
+    border: 1px solid red;
+    margin-top: 22px;
+    font-family: "PF Din Text Cond Pro Medium";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    /* or 110% */
+
+    text-align: center;
+
+    color: #5b1a0d;
+  }
 }
