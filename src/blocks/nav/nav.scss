@@ -1,0 +1,20 @@
+.nav {
+  width: 352px;
+  height: 21px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style-type: none;
+  li {
+    font-family: "PF Din Text Cond Pro Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+
+    text-transform: uppercase;
+
+    color: #5a1404;
+  }
+}
