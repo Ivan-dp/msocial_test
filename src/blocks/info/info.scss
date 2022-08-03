@@ -1,18 +1,12 @@
 .info {
   width: 353px;
   height: 21px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include Flex(space-between, row, center);
   li {
     list-style-type: none;
     a {
       text-decoration: none;
-      font-family: "PF Din Text Cond Pro Medium";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 21px;
+      @include PFDinTextCondPro("Medium", 16, 21);
       color: #5a1404;
     }
   }

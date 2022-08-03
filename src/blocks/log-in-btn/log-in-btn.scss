@@ -4,19 +4,9 @@
   background: #ffcd00;
   border-radius: 29px;
   border: none;
-
-  font-family: "PF Din Text Cond Pro Medium";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  /* identical to box height, or 131% */
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include PFDinTextCondPro("Medium", 16, 21);
+  @include Flex(center, row, center);
   text-align: center;
   text-transform: uppercase;
-
   color: #5a1404;
 }

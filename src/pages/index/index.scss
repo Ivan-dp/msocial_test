@@ -4,7 +4,8 @@
 
 // Mixins
 
-@import "/src/scss/mixin-PFDinTextCondPro.scss";
+@import "/src/scss/mixins/PFDinTextCondPro.scss";
+@import "/src/scss/mixins/Flex.scss";
 
 // Blocks
 
@@ -33,8 +34,7 @@ main {
     position: relative;
     height: 1180px;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    @include Flex(center, row, stretch);
     &__background {
       position: absolute;
       top: 487px;
@@ -43,10 +43,8 @@ main {
       height: 693px;
       margin-top: auto;
       margin-bottom: 0;
-      display: flex;
+      @include Flex(center, row, flex-end);
       flex-wrap: wrap;
-      align-items: flex-end;
-      justify-content: center;
       align-content: flex-end;
     }
   }
