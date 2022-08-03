@@ -12,11 +12,11 @@
       width: 11px;
       height: 11px;
       border-radius: 5.5px;
-      background-color: #5b1a0d;
+      background-color: $main-color-text;
       border: none;
       opacity: 1;
       &-active {
-        border: 1px solid #5b1a0d;
+        border: 1px solid $main-color-text;
         background-color: white;
       }
     }
@@ -65,6 +65,6 @@
     margin-top: 22px;
     @include PFDinTextCondPro("Regular", 20, 22);
     text-align: center;
-    color: #5b1a0d;
+    color: $main-color-text;
   }
 }

@@ -3,7 +3,7 @@
   height: 64px;
   &__title {
     @include PFDinTextCondPro("Regular", 16, 21);
-    color: #5b1a0d;
+    color: $main-color-text;
     margin-bottom: 11px;
   }
   &__list {
