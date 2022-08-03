@@ -1,0 +1,53 @@
+.action-rules {
+  width: 100%;
+  margin-bottom: 67px;
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__wrap {
+    width: 23px;
+    height: 46px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  &__arrow-right {
+    box-sizing: border-box;
+    position: absolute;
+    right: -5px;
+    top: 6px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-right: 3px solid #e30613;
+    border-bottom: 3px solid #e30613;
+    transform: rotate(-45deg);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 180px;
+  }
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__description {
+    margin-top: 22px;
+    font-family: "PF Din Text Cond Pro Medium";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #5b1a0d;
+  }
+}
