@@ -1,7 +1,7 @@
 .sign-in-btn {
-  border: none;
-  background: none;
   @include PFDinTextCondPro("Medium", 16, 21);
+  border: none;
   text-transform: uppercase;
   color: $secondary-color-text;
+  background: none;
 }

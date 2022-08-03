@@ -1,28 +1,28 @@
 .company-age {
+  @include Flex(center, row, center);
   width: 708px;
   height: 54px;
-  @include Flex(center, row, center);
-  z-index: 10;
   margin-bottom: 57px;
+  z-index: 10;
   &__title {
-    width: 100%;
-    height: auto;
-    position: relative;
     @include PFDinTextCondPro("Medium", 60, 46);
     @include Flex(flex-start, row, center);
+    position: relative;
+    width: 100%;
+    height: auto;
     text-align: center;
     text-transform: uppercase;
 
     color: #ffffff;
     &::after {
       content: "Нам 40 лет — вам подарки";
-      width: 100%;
-      height: auto;
-      position: absolute;
-      bottom: 4.64px;
-      left: 2px;
       @include PFDinTextCondPro("Medium", 60, 46);
       @include Flex(flex-start, row, center);
+      position: absolute;
+      width: 100%;
+      height: auto;
+      bottom: 4.64px;
+      left: 2px;
       text-align: center;
       text-transform: uppercase;
       color: #e63000;
