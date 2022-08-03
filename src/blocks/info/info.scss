@@ -1,12 +1,12 @@
 .info {
+  @include Flex(space-between, row, center);
   width: 353px;
   height: 21px;
-  @include Flex(space-between, row, center);
   li {
     list-style-type: none;
     a {
-      text-decoration: none;
       @include PFDinTextCondPro("Medium", 16, 21);
+      text-decoration: none;
       color: $secondary-color-text;
     }
   }
