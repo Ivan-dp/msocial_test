@@ -1,3 +1,11 @@
+// Fonts
+
+@import "/src/scss/fonts.scss";
+
+// Mixins
+
+@import "/src/scss/mixin-PFDinTextCondPro.scss";
+
 // Blocks
 
 @import "/src/blocks/header/header.scss";
@@ -7,17 +15,10 @@
 @import "/src/blocks/action-goods/action-goods.scss";
 @import "/src/blocks/footer/footer.scss";
 
-// Fonts
-
-@import "/src/scss/PFDinTextCondPro-Medium.scss";
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  // position: relative;
-  // margin-left: auto;
-  // margin-right: auto;
 }
 
 main {
@@ -32,9 +33,6 @@ main {
     position: relative;
     height: 1180px;
     width: 100%;
-    // overflow: hidden;
-    // overflow
-    // overflow-x: hidden;
     display: flex;
     justify-content: center;
     &__background {

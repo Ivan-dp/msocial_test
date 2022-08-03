@@ -1,0 +1,7 @@
+@mixin PFDinTextCondPro($weight, $size, $height) {
+  font-family: "PF Din Text Cond Pro " + $weight, sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}

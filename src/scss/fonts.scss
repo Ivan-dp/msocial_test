@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "PF Din Text Cond Pro Regular";
+  src: url("/src/fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Regular.eot");
+  src: url("/src/fonts/PFDinTextCondPro-Medium/pfdintextcondpro-regular.woff")
+      format("woff"),
+    url("/src/fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Regular.ttf")
+      format("truetype"),
+    url("/src/fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Regular.svg#PFDinTextCondPro-Regular")
+      format("svg");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PF Din Text Cond Pro Medium";
+  src: url("/src/fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.eot");
+  src: url("/src/fonts/PFDinTextCondPro-Medium/pfdintextcondpro-medium.woff")
+      format("woff"),
+    url("/src/fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.ttf")
+      format("truetype"),
+    url("/src/fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.svg#PFDinTextCondPro-Medium")
+      format("svg");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "PF Din Text Cond Pro Bold";
+  src: url("/src/fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Bold.eot");
+  src: url("/src/fonts/PFDinTextCondPro-Medium/pfdintextcondpro-bold.woff")
+      format("woff"),
+    url("/src/fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Bold.ttf")
+      format("truetype"),
+    url("/src/fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Bold.svg#PFDinTextCondPro-Bold")
+      format("svg");
+  font-style: normal;
+  font-weight: 700;
+}
