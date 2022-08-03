@@ -9,9 +9,13 @@ html(lang="en")
     body 
         // Mixins
         include ../../pug/mixins/card
+
+        
         include ../../blocks/header/header
-        .wrapper
-            include ../../blocks/hero/hero
-            .wrapper__background
-                include ../../blocks/company-age/company-age
-                include ../../blocks/action-rules/action-rules
+        main
+            .wrapper
+                include ../../blocks/hero/hero
+                .wrapper__background
+                    include ../../blocks/company-age/company-age
+                    include ../../blocks/action-rules/action-rules
+            include ../../blocks/action-goods/action-goods
