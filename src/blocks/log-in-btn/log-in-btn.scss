@@ -8,5 +8,5 @@
   @include Flex(center, row, center);
   text-align: center;
   text-transform: uppercase;
-  color: #5a1404;
+  color: $secondary-color-text;
 }

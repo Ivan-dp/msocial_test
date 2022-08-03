@@ -2,7 +2,7 @@
   &__title {
     @include PFDinTextCondPro("Medium", 16, 21);
     text-transform: uppercase;
-    color: #5a1404;
+    color: $secondary-color-text;
   }
   &__phone {
     @include PFDinTextCondPro("Medium", 36, 47);
@@ -10,6 +10,6 @@
   }
   &__copyright {
     @include PFDinTextCondPro("Regular", 12, 21);
-    color: #5b1a0d;
+    color: $main-color-text;
   }
 }
