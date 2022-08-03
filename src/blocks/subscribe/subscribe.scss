@@ -1,0 +1,28 @@
+.subscribe {
+  width: 242px;
+  height: 64px;
+  &__title {
+    font-family: "PF Din Text Cond Pro Medium";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #5b1a0d;
+    margin-bottom: 11px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    a {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__item {
+    width: 32px;
+    height: 32px;
+    list-style-type: none;
+  }
+}
