@@ -1,2 +1,10 @@
+- var goods = [{img: require('/src/img/goods1.png'), desc: 'Лёгкий, брусок', price: '180 г'}, {img: require("/src/img/goods2.png"), desc: "Лёгкий, слайсы", price: "120, 225 г"}, {img: require("/src/img/goods3.png"), desc: "Сливочный, брусок", price: "200, 300 г"}, {img: require("/src/img/goods4.png"), desc: "Сливочный, слайсы", price: "130, 250 г"}]
 .action-goods 
-    
+    .container
+        .swiper
+            .swiper-wrapper
+                each good in goods           
+                    +card(good.img, good.desc, 'swiper-slide', good.price)(class= 'swiper-slide')
+            .swiper-pagination 
+            .swiper-button-prev 
+            .swiper-button-next 
