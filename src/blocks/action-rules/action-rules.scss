@@ -38,6 +38,6 @@
     margin-top: 22px;
     @include PFDinTextCondPro("Regular", 20, 22);
     text-align: center;
-    color: #5b1a0d;
+    color: $main-color-text;
   }
 }
