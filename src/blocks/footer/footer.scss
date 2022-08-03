@@ -3,9 +3,9 @@
 @import "/src/blocks/subscribe/subscribe.scss";
 
 footer {
+  @include Flex(center, row, center);
   width: 100%;
   height: 130px;
-  @include Flex(center, row, center);
   //   border: 1px solid red;
   .container {
     margin-top: 22px;

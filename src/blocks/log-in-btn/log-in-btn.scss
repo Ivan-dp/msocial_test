@@ -1,12 +1,12 @@
 .log-in-btn {
-  width: 120px;
-  height: 40px;
-  background: #ffcd00;
-  border-radius: 29px;
-  border: none;
   @include PFDinTextCondPro("Medium", 16, 21);
   @include Flex(center, row, center);
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 29px;
   text-align: center;
   text-transform: uppercase;
   color: $secondary-color-text;
+  background: #ffcd00;
 }

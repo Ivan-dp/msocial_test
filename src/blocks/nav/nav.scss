@@ -1,7 +1,7 @@
 .nav {
+  @include Flex(space-between, row, stretch);
   width: 352px;
   height: 21px;
-  @include Flex(space-between, row, stretch);
   list-style-type: none;
   li {
     @include PFDinTextCondPro("Medium", 16, 21);
