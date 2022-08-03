@@ -2,8 +2,6 @@
 @import "/src/blocks/sign-in-btn/sign-in-btn.scss";
 
 .authorization {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include Flex(space-between, row, center);
   width: 227px;
 }

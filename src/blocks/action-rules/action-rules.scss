@@ -1,11 +1,8 @@
 .action-rules {
   width: 100%;
   margin-bottom: 67px;
-  display: flex;
-  justify-content: center;
+  @include Flex(center, row, stretch);
   .container {
-    display: flex;
-    justify-content: space-between;
     flex-direction: row;
     align-items: center;
   }
@@ -30,24 +27,16 @@
     margin-left: 10px;
   }
   &__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include Flex(center, column, stretch);
     max-width: 180px;
     // border: 1px dashed red;
   }
   &__picture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex(center, row, center);
   }
   &__description {
     margin-top: 22px;
-    font-family: "PF Din Text Cond Pro Medium";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 22px;
+    @include PFDinTextCondPro("Regular", 20, 22);
     text-align: center;
     color: #5b1a0d;
   }
