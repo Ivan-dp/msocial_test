@@ -40,4 +40,20 @@
       color: #e63000;
     }
   }
+  &__baloon,
+  &__curl,
+  &__curl2 {
+    position: absolute;
+  }
+  &__baloon {
+    left: 57px;
+  }
+  &__curl {
+    right: 74px;
+    bottom: 314px;
+  }
+  &__curl2 {
+    left: 237px;
+    bottom: -24px;
+  }
 }
