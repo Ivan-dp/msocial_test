@@ -1,0 +1,34 @@
+.hotline {
+  &__title {
+    font-family: "PF Din Text Cond Pro Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+
+    text-transform: uppercase;
+
+    color: #5a1404;
+  }
+  &__phone {
+    font-family: "PF Din Text Cond Pro Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    /* identical to box height, or 175% */
+
+    color: #e43219;
+  }
+  &__copyright {
+    font-family: "PF Din Text Cond Pro Medium";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    /* identical to box height, or 175% */
+
+    color: #5b1a0d;
+  }
+}

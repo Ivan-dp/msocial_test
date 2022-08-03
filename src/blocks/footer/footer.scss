@@ -1,0 +1,17 @@
+@import "/src/blocks/hotline/hotline.scss";
+@import "/src/blocks/info/info.scss";
+@import "/src/blocks/subscribe/subscribe.scss";
+
+footer {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
