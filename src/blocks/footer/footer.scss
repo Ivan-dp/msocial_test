@@ -8,10 +8,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  //   border: 1px solid red;
   .container {
+    margin-top: 22px;
+    height: 99px;
+    // border: 1px solid red;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 }
