@@ -1,0 +1,21 @@
+.subscribe {
+  width: 242px;
+  height: 64px;
+  &__title {
+    @include PFDinTextCondPro("Regular", 16, 21);
+    color: #5b1a0d;
+    margin-bottom: 11px;
+  }
+  &__list {
+    @include Flex(space-between, row, center);
+    a {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__item {
+    width: 32px;
+    height: 32px;
+    list-style-type: none;
+  }
+}

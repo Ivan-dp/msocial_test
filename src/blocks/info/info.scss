@@ -1,0 +1,13 @@
+.info {
+  width: 353px;
+  height: 21px;
+  @include Flex(space-between, row, center);
+  li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      @include PFDinTextCondPro("Medium", 16, 21);
+      color: #5a1404;
+    }
+  }
+}

@@ -1,3 +1,12 @@
+// Fonts
+
+@import "/src/scss/fonts.scss";
+
+// Mixins
+
+@import "/src/scss/mixins/PFDinTextCondPro.scss";
+@import "/src/scss/mixins/Flex.scss";
+
 // Blocks
 
 @import "/src/blocks/header/header.scss";
@@ -5,35 +14,27 @@
 @import "/src/blocks/action-rules/action-rules.scss";
 @import "/src/blocks/company-age/company-age.scss";
 @import "/src/blocks/action-goods/action-goods.scss";
-
-// Fonts
-
-@import "/src/scss/PFDinTextCondPro-Medium.scss";
+@import "/src/blocks/footer/footer.scss";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  // position: relative;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 main {
   width: 1440px;
   height: 100%;
   overflow: hidden;
-  border: 1px dashed red;
+  // border: 1px dashed red;
+  margin-left: auto;
+  margin-right: auto;
   .wrapper {
-    border: 1px dashed red;
+    // border: 1px dashed red;
     position: relative;
     height: 1180px;
     width: 100%;
-    // overflow: hidden;
-    // overflow
-    // overflow-x: hidden;
-    display: flex;
-    justify-content: center;
+    @include Flex(center, row, stretch);
     &__background {
       position: absolute;
       top: 487px;
@@ -42,10 +43,8 @@ main {
       height: 693px;
       margin-top: auto;
       margin-bottom: 0;
-      display: flex;
+      @include Flex(center, row, flex-end);
       flex-wrap: wrap;
-      align-items: flex-end;
-      justify-content: center;
       align-content: flex-end;
     }
   }
