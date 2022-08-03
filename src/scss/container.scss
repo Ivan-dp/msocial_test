@@ -1,4 +1,5 @@
 .container {
   width: 1174px;
+  @include Flex(space-between, row, stretch);
   // border: 1px dashed red;
 }

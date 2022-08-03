@@ -73,9 +73,7 @@
     height: 69px;
     border-radius: 46px;
     z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex(center, row, center);
     background: #ededed;
     filter: drop-shadow(0px 0px 37px #e7e7e7);
 
@@ -86,11 +84,7 @@
       background-color: #e63000;
       border: none;
       text-transform: uppercase;
-      font-family: "PF Din Text Cond Pro Medium";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 21px;
+      @include PFDinTextCondPro("Medium", 16, 21);
       color: #ffffff;
     }
   }

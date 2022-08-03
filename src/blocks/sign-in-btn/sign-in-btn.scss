@@ -1,15 +1,7 @@
 .sign-in-btn {
   border: none;
   background: none;
-
-  font-family: "PF Din Text Cond Pro Medium";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  /* identical to box height, or 131% */
-
+  @include PFDinTextCondPro("Medium", 16, 21);
   text-transform: uppercase;
-
   color: #5a1404;
 }

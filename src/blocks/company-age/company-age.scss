@@ -1,22 +1,15 @@
 .company-age {
   width: 708px;
   height: 54px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include Flex(center, row, center);
   z-index: 10;
   margin-bottom: 57px;
   &__title {
     width: 100%;
     height: auto;
     position: relative;
-    font-family: "PF Din Text Cond Pro Medium";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 46px;
-    display: flex;
-    align-items: center;
+    @include PFDinTextCondPro("Medium", 60, 46);
+    @include Flex(flex-start, row, center);
     text-align: center;
     text-transform: uppercase;
 
@@ -28,13 +21,8 @@
       position: absolute;
       bottom: 4.64px;
       left: 2px;
-      font-family: "PF Din Text Cond Pro Medium";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 60px;
-      line-height: 46px;
-      display: flex;
-      align-items: center;
+      @include PFDinTextCondPro("Medium", 60, 46);
+      @include Flex(flex-start, row, center);
       text-align: center;
       text-transform: uppercase;
       color: #e63000;
