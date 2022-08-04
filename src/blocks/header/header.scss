@@ -1,12 +1,14 @@
 @import "/src/blocks/authorization/authorization";
 @import "/src/blocks/nav/nav.scss";
 @import "/src/scss/container.scss";
+@import "/src/blocks/menu-drop/menu-drop.scss";
 
 header {
   @include Flex(center, row, stretch);
   width: 100%;
   height: 82px;
   background-color: white;
+  z-index: 15;
   // border: 1px dashed red;
   .container {
     @include Flex(space-between, row, center);
