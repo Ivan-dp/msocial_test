@@ -5,6 +5,9 @@ const webpack = require("webpack");
 
 module.exports = {
   mode: "development",
+  stats: {
+    children: false,
+  },
   devServer: {
     historyApiFallback: true,
     // contentBase: path.resolve(__dirname, "./dist"),
@@ -41,7 +44,7 @@ module.exports = {
 
       // изображения
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
         type: "asset/resource",
       },
 
@@ -54,7 +57,7 @@ module.exports = {
 
       // шрифты и SVG
       {
-        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        test: /\.(woff|eot|ttf|svg|)$/,
         type: "asset/inline",
       },
 

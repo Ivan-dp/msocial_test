@@ -1,5 +1,8 @@
 - var subscribes = [{img: require('/src/img/fb.svg'), url: 'https://ru.wikipedia.org/wiki/Facebook'}, {img: require('/src/img/vk.svg'), url: 'https://vk.com/'}, {img: require('/src/img/in.svg'), url: 'https://ru.wikipedia.org/wiki/LinkedIn'}, {img: require('/src/img/tw.svg'), url: 'https://ru.wikipedia.org/wiki/Твиттер'}, {img: require('/src/img/ins.svg'), url: 'https://ru.wikipedia.org/wiki/Instagram'}, {img: require('/src/img/pint.svg'), url: 'https://ru.pinterest.com/'}]
 
+- var subscribes_m = [{img: require('/src/img/m/fb.svg'), url: 'https://ru.wikipedia.org/wiki/Facebook'}, {img: require('/src/img/m/vk.svg'), url: 'https://vk.com/'}, {img: require('/src/img/m/in.svg'), url: 'https://ru.wikipedia.org/wiki/LinkedIn'}, {img: require('/src/img/m/tw.svg'), url: 'https://ru.wikipedia.org/wiki/Твиттер'}, {img: require('/src/img/m/ins.svg'), url: 'https://ru.wikipedia.org/wiki/Instagram'}, {img: require('/src/img/m/pint.svg'), url: 'https://ru.pinterest.com/'}]
+
+
 .subscribe 
     h3.subscribe__title Присоединяйтесь к нам 
     ul.subscribe__list
@@ -7,4 +10,8 @@
             a(href= link.url) 
                 li.subscribe__item
                     img(src= link.img)
-        
+    ul.subscribe_m__list
+        each link in subscribes_m
+            a(href= link.url) 
+                li.subscribe_m__item
+                    img(src= link.img)

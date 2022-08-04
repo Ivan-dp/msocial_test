@@ -1,0 +1,34 @@
+@media screen and (max-width: 1280px) {
+  .container {
+    margin: 0 53px;
+  }
+  .action-rules__card {
+    width: 120px;
+  }
+  .swiper-slide__card,
+  .swiper-slide {
+    width: 200px;
+  }
+  .action-goods {
+    padding: 0 53px;
+    .container {
+      width: 100%;
+      //   margin: 0 53px;
+    }
+  }
+  .hero {
+    &__cheese-home {
+      left: 75px;
+    }
+    &__prize {
+      right: 80px;
+    }
+    &__boy {
+      left: 260px;
+    }
+  }
+  .nav,
+  .info {
+    width: 280px;
+  }
+}

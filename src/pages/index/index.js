@@ -12,15 +12,3 @@ menuButton.addEventListener("click", function () {
   menuButton.classList.toggle("menu-button-active");
   menu.classList.toggle("menu-drop-active");
 });
-
-// var link = menu.querySelectorAll(".nav > a");
-// console.log(link);
-// const func = () => {
-//   for (let i = 0; i < link.length; i++) {
-//     link[i].addEventListener("click", function () {
-//       menuButton.classList.toggle("menu-button");
-//     });
-//   }
-// };
-
-// func();

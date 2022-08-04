@@ -13,7 +13,7 @@
     width: 1729px;
     height: 1106px;
     top: -372px;
-    border-radius: 864.5px/553px;
+    border-radius: 50%;
     background: #ffcd00;
     &:last-child {
       @include Flex(center, row, stretch);
