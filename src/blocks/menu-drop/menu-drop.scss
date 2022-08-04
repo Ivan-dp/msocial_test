@@ -1,0 +1,55 @@
+.menu-drop {
+  position: absolute;
+  width: 360px;
+  height: 420px;
+  top: 62px;
+  left: -360px;
+  box-sizing: border-box;
+  border-right: 1px solid $lines-mobile;
+  border-bottom: 1px solid $lines-mobile;
+  border-radius: 0 0 10px 0;
+  background: $main-background;
+  transition: all 0.9s;
+  .subscribe {
+    margin: 25px auto auto 20px;
+  }
+  .nav,
+  .info {
+    @include Flex(space-between, column, baseline);
+    width: 85px;
+    margin: 25px auto 25px 20px;
+  }
+  .nav {
+    height: 103px;
+  }
+  .info {
+    height: 93px;
+    li a {
+      @include PFDinTextCondPro("Medium", 14, 21);
+    }
+  }
+  &-active {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    z-index: 11;
+    transition: all 0.9s;
+  }
+  &__line {
+    position: relative;
+    width: 320px;
+    height: 0;
+    border: 1px solid $lines-mobile;
+    margin: 0 20px;
+  }
+  .subscribe {
+    &__list {
+      display: none;
+    }
+    &_m__list {
+      @include Flex(space-between, row, center);
+      text-decoration: none;
+      list-style-type: none;
+    }
+  }
+}

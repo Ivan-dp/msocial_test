@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 961px) and (max-width: 1280px) {
   .container {
     margin: 0 53px;
   }
@@ -26,5 +26,9 @@
     &__boy {
       left: 260px;
     }
+  }
+  .nav,
+  .info {
+    width: 280px;
   }
 }

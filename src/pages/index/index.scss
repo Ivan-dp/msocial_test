@@ -26,9 +26,9 @@
   box-sizing: border-box;
 }
 
-// body {
-//   width: 100%;
-// }
+.menu-button {
+  display: none;
+}
 
 main {
   width: 100%;
@@ -65,5 +65,5 @@ main {
 // Media Queries
 
 @import "/src/scss/media-queries/1440-and-more.scss";
-@import "/src/scss/media-queries/1024-1280.scss";
-@import "/src/scss/media-queries/768-1023.scss";
+@import "/src/scss/media-queries/961-1280.scss";
+@import "/src/scss/media-queries/641-960.scss";
