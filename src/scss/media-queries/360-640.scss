@@ -31,6 +31,15 @@
             opacity: 1;
           }
         }
+        &__check-button {
+          width: 164px;
+          height: 47px;
+          top: 390px;
+          button {
+            width: 152px;
+            height: 34px;
+          }
+        }
         &__cheese-home {
           left: 410px;
           top: 140px;
