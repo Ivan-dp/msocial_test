@@ -3,9 +3,12 @@
   width: 352px;
   height: 21px;
   list-style-type: none;
-  li {
-    @include PFDinTextCondPro("Medium", 16, 21);
-    text-transform: uppercase;
-    color: $secondary-color-text;
+  a {
+    text-decoration: none;
+    li {
+      @include PFDinTextCondPro("Medium", 16, 21);
+      text-transform: uppercase;
+      color: $secondary-color-text;
+    }
   }
 }
