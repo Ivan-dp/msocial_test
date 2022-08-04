@@ -1,4 +1,4 @@
-@media screen and (min-width: 360px) and (max-width: 640px) {
+@media screen and (min-width: 320px) and (max-width: 640px) {
   header {
     .container {
       margin: auto 10px;
@@ -19,6 +19,7 @@
   }
   main {
     .wrapper {
+      height: 1435px;
       .hero {
         &__ellipse {
           width: 646px;
@@ -77,17 +78,18 @@
         }
       }
       &__background {
-        @include Flex(space-between, column, center);
+        @include Flex(flex-start, column, center);
         top: 0;
-        padding-top: 333px;
-        height: 1435px !important;
+        padding-top: 310px;
+        height: 100% !important;
         .company-age {
-          width: 100%;
+          width: 333px;
+          height: 82px;
           &__title {
             @include PFDinTextCondPro("Medium", 34, 41);
-            display: flex;
-            width: 333px;
-            height: 82px;
+            display: block;
+            width: 100%;
+            height: 100%;
             margin-top: 84px;
             &::after {
               @include PFDinTextCondPro("Medium", 34, 41);
@@ -112,15 +114,69 @@
             }
           }
           &__curl2 {
-            top: 1313px;
+            top: 1415px;
             left: 51px;
+            width: 45px;
+            height: 41px;
             svg {
               width: 45px;
               height: 41px;
             }
           }
         }
+        .action-rules {
+          display: flex;
+          &__card {
+            width: 220px;
+          }
+          &__wrap {
+            margin-bottom: 20px;
+            margin-top: 5px;
+          }
+          &__arrow-right {
+            transform: rotate(45deg);
+            margin: 0;
+          }
+          .container {
+            @include Flex(space-between, column, center);
+          }
+        }
       }
+    }
+    .action-goods {
+      width: 100%;
+      height: 450px;
+      padding: 0 20px;
+      &__title {
+        @include PFDinTextCondPro("Medium", 30, 46);
+        width: 251px;
+        height: 46px;
+        text-transform: uppercase;
+        color: $secondary-color-text;
+      }
+      .container {
+        @include Flex(space-between, column, center);
+        margin: 0 5px;
+      }
+    }
+  }
+  .swiper {
+    .swiper-slide__picture {
+      width: 142px;
+      height: 220px;
+      img {
+        &:nth-child(odd) {
+          width: 120px;
+          height: 185px;
+        }
+        &:nth-child(even) {
+          width: 145px;
+          height: 220px;
+        }
+      }
+    }
+    .swiper-slide__description {
+      @include PFDinTextCondPro("Regular", 18, 22);
     }
   }
 }
