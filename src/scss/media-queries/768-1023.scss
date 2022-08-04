@@ -15,6 +15,20 @@
     .container {
       width: 100%;
     }
+    .swiper-slide {
+      &:nth-child(even) {
+        img {
+          width: 198px;
+          height: 305px;
+        }
+      }
+      &:nth-child(odd) {
+        img {
+          width: 179px;
+          height: 277px;
+        }
+      }
+    }
   }
   .action-rules {
     display: none;
