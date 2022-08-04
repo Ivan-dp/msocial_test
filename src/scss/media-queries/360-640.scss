@@ -1,0 +1,115 @@
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  header {
+    .container {
+      margin: auto 10px;
+      .logo {
+        margin-left: 10px;
+        svg {
+          width: 136px;
+          height: 21px;
+        }
+      }
+      .menu-button {
+        margin-left: 5px;
+      }
+    }
+    .menu-drop {
+      box-shadow: -10px 15px 10px 5px rgba(0, 0, 0, 0.5); //   left: -380px;
+    }
+  }
+  main {
+    .wrapper {
+      .hero {
+        &__ellipse {
+          width: 646px;
+          height: 414px;
+          top: -130px;
+          &:first-child {
+            opacity: 1;
+          }
+          &:last-child {
+            opacity: 1;
+          }
+        }
+        &__cheese-home {
+          left: 410px;
+          top: 140px;
+          svg {
+            width: 210px;
+            height: 134px;
+          }
+        }
+        &__trade-mark {
+          width: 201px;
+          height: 298px;
+          top: 240px;
+          right: 410px;
+        }
+        &__prize {
+          width: 66px;
+          height: 66px;
+          top: 205px;
+          right: 420px;
+        }
+        &__kitchen {
+          width: 333px;
+          height: 199px;
+          left: 320px;
+          top: 235px;
+        }
+        &__boy {
+          width: 224px;
+          height: 204px;
+          top: 155px;
+          left: 470px;
+        }
+        &__check-button {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+//   main {
+//     .wrapper {
+//       .hero {
+//         height: 300px;
+//         &__ellipse {
+//           display: none;
+//           :last-child {
+//             width: 646px;
+//             height: 414px;
+//             border-radius: 50%;
+//             .container {
+//               .hero__cheese-home {
+//                 left: 405px;
+//                 top: 390px;
+//                 svg {
+//                   width: 210px;
+//                   height: 135px;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//         &__prize {
+//           right: 420px;
+//           top: 460px;
+//           height: 66px;
+//           width: 66px;
+//         }
+//         &__trade-mark {
+//           right: 175px;
+//           width: 500px;
+//           height: 750px;
+//         }
+//         &__boy {
+//           width: 223px;
+//           height: 204px;
+//           left: 468px;
+//           top: 410px;
+//         }
+//       }
+//     }
+//   }

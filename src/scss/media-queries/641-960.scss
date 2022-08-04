@@ -1,4 +1,4 @@
-@media screen and (min-width: 641px) and (max-width: 960px) {
+@media screen and (max-width: 960px) {
   header {
     position: fixed;
     height: 62px;
@@ -182,6 +182,7 @@
         }
       }
       .copyright {
+        display: block;
         @include PFDinTextCondPro("Regular", 12, 21);
         color: $main-color-text;
       }
