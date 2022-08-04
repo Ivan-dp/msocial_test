@@ -54,7 +54,7 @@ module.exports = {
 
       // шрифты и SVG
       {
-        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        test: /\.(woff|eot|ttf|svg|)$/,
         type: "asset/inline",
       },
 
