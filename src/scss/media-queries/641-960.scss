@@ -1,0 +1,191 @@
+@media screen and (max-width: 960px) {
+  header {
+    position: fixed;
+    height: 62px;
+    z-index: 15;
+    .container {
+      margin: 0 25px;
+      justify-content: flex-start;
+      .logo {
+        // align-self: baseline;
+        margin-left: 20px;
+      }
+      ul {
+        display: none;
+      }
+      .authorization {
+        width: auto;
+        margin-right: 0px;
+        margin-left: auto;
+        .log-in-btn {
+          width: 78px;
+          height: 32px;
+          border-radius: 16px;
+        }
+        .sign-in-btn {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .menu-button {
+    display: block;
+    width: 23px;
+    height: 3px;
+    border: none;
+    border-radius: 1.5px;
+    background: $main-color-text;
+    cursor: pointer;
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 23px;
+      height: 3px;
+      border-radius: 1.5px;
+      background: $main-color-text;
+      transition: transform 1s;
+    }
+    &::before {
+      margin-top: -8px;
+    }
+    &::after {
+      margin-top: 8px;
+    }
+    &-active {
+      height: 0;
+      z-index: 101;
+      &::before {
+        transform: rotate(45deg);
+        margin-top: 0;
+      }
+      &::after {
+        transform: rotate(-45deg);
+        margin-top: 0;
+      }
+    }
+  }
+
+  main {
+    .wrapper {
+      margin-top: 62px;
+      height: 887px;
+      .wrapper__background {
+        height: 400px;
+      }
+    }
+  }
+
+  .hero {
+    &__cheese-home {
+      left: 270px;
+      top: 400px;
+      svg {
+        width: 320px;
+        height: 220px;
+      }
+    }
+    &__prize {
+      right: 270px;
+      height: 150px;
+      width: 150px;
+    }
+    &__trade-mark {
+      right: 175px;
+      width: 500px;
+      height: 750px;
+    }
+    &__boy {
+      width: 500px;
+      height: 470px;
+      left: 280px;
+    }
+  }
+
+  .company-age {
+    &__title {
+      display: none;
+    }
+    &__baloon {
+      bottom: 10px;
+    }
+    &__curl {
+      bottom: 120px;
+    }
+  }
+
+  .action-rules {
+    display: none;
+  }
+
+  .action-goods {
+    padding: 0 53px;
+    height: 450px;
+    .container {
+      width: 100%;
+    }
+    .swiper {
+      height: 350px;
+    }
+    .swiper-slide {
+      &__card {
+        width: 180px;
+        height: 290px;
+      }
+      &:nth-child(even) {
+        img {
+          width: 141px;
+          height: 218px;
+        }
+      }
+      &:nth-child(odd) {
+        img {
+          width: 128px;
+          height: 198px;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 253px;
+    .container {
+      height: 100%;
+      @include Flex(center, column, center);
+      .info {
+        order: -1;
+        width: 273px;
+        height: 21px;
+        margin: 15px auto 24px;
+      }
+      .hotline {
+        h3,
+        h2 {
+          display: flex;
+          justify-content: center;
+        }
+        &__title {
+          margin-bottom: 10px;
+        }
+        p {
+          display: none;
+        }
+      }
+      .subscribe {
+        margin: 17px auto;
+        @include Flex(space-between, column, center);
+        &__list {
+          @include Flex(space-between, row, center);
+          width: 100%;
+        }
+      }
+      .copyright {
+        display: block;
+        @include PFDinTextCondPro("Regular", 12, 21);
+        color: $main-color-text;
+      }
+    }
+  }
+}

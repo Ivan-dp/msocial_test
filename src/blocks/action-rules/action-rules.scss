@@ -28,7 +28,7 @@
   }
   &__card {
     @include Flex(center, column, stretch);
-    max-width: 180px;
+    width: 180px;
     // border: 1px dashed red;
   }
   &__picture {
