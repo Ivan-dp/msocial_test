@@ -4,6 +4,17 @@
   height: 618px;
   background: linear-gradient(180.05deg, #ededed 22.63%, #ffffff 99.95%);
   // border: 1px dashed green;
+  .container {
+    @include Flex(space-between, column, center);
+    margin: 0 5px;
+  }
+  &__title {
+    @include PFDinTextCondPro("Medium", 30, 46);
+    width: 251px;
+    height: 46px;
+    text-transform: uppercase;
+    color: $secondary-color-text;
+  }
   .swiper {
     // border: 1px dashed green;
     width: 100%;
