@@ -2,6 +2,7 @@
   @include PFDinTextCondPro("Medium", 16, 21);
   border: none;
   text-transform: uppercase;
+  text-decoration: none;
   color: $secondary-color-text;
   background: none;
 }
