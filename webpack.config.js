@@ -44,7 +44,7 @@ module.exports = {
 
       // изображения
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
+        test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
         type: "asset/resource",
       },
 
