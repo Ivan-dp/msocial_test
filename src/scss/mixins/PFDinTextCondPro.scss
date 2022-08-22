@@ -1,3 +1,5 @@
+// Задаю миксин шрифта, что бы уменьшить количество кода
+
 @mixin PFDinTextCondPro($weight, $size, $height) {
   font-family: "PF Din Text Cond Pro " + $weight, sans-serif;
   font-style: normal;

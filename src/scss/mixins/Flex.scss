@@ -1,3 +1,5 @@
+// Задаю миксин flex, что бы уменьшить количество кода
+
 @mixin Flex($justify-content, $flex-direction, $align-items) {
   display: flex;
   justify-content: $justify-content;
