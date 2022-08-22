@@ -1,11 +1,12 @@
-- var goods = [{img: require('/src/img/goods1.webp'), desc: 'Лёгкий, брусок', price: '180 г'}, {img: require("/src/img/goods2.webp"), desc: "Лёгкий, слайсы", price: "120, 225 г"}, {img: require("/src/img/goods3.webp"), desc: "Сливочный, брусок", price: "200, 300 г"}, {img: require("/src/img/goods4.webp"), desc: "Сливочный, слайсы", price: "130, 250 г"}]
+- var goods = [{img: require('/src/img/goods1.webp').default, desc: 'Лёгкий, брусок', price: '180 г', srcset: '/img/goods1@2x.webp 2x'.default}, {img: require("/src/img/goods2.webp").default, desc: "Лёгкий, слайсы", price: "120, 225 г", srcset: 'src/img/goods2@2x.webp 2x'.default}, {img: require("/src/img/goods3.webp").default, desc: "Сливочный, брусок", price: "200, 300 г", srcset: 'src/img/goods3@2x.webp 2x'.default}, {img: require("/src/img/goods4.webp").default, desc: "Сливочный, слайсы", price: "130, 250 г", srcset: 'src/img/goods4@2x.webp 2x'.default}]
+
 .action-goods 
     .container
         h1.action-goods__title В акции участвуют
         .swiper
             .swiper-wrapper
                 each good in goods           
-                    +card(good.img, good.desc, 'swiper-slide', good.price)(class= 'swiper-slide hover')
+                    +card(good.img, good.desc, 'swiper-slide', good.price, good.srcset)(class= 'swiper-slide hover')
             .swiper-pagination 
             .swiper-button-prev
             .swiper-button-next

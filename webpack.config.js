@@ -43,9 +43,16 @@ module.exports = {
       },
 
       // изображения
+      // {
+      //   test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
+      //   type: "asset/resource",
+      // },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
-        type: "asset/resource",
+        loader: "file-loader",
+        options: {
+          name: "./dist/icons/[name].[ext]",
+        },
       },
 
       //   {
