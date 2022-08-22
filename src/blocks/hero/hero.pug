@@ -6,7 +6,7 @@
         .container
             .hero__cheese-home 
                 include ../../img/cheese_home.svg
-            img.hero__trade-mark(src=require("/src/img/trade_mark.webp"), alt="trade_mark.webp")
-            img.hero__prize(src=require("/src/img/prize.webp"), alt="prize.webp")
-            img.hero__kitchen(src=require("/src/img/kitchen.webp"), alt="kitchen.webp")
-            img.hero__boy(src=require("/src/img/boy.webp"), alt="boy.webp")
+            img.hero__trade-mark(src=require("/src/img/trade_mark.webp").default, srcset='/src/img/trade_mark@2x 2x'.default alt="trade_mark.webp")
+            img.hero__prize(src=require("/src/img/prize.webp").default, srcset='/src/img/prize@2x 2x'.default alt="prize.webp")
+            img.hero__kitchen(src=require("/src/img/kitchen.webp").default, srcset='/src/img/kitchen@2x 2x'.default alt="kitchen.webp")
+            img.hero__boy(src=require("/src/img/boy.webp").default, srcset='/src/img/boy@2x 2x'.default alt="boy.webp")
