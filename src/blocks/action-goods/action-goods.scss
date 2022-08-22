@@ -37,6 +37,13 @@
       &::after {
         content: url("/src/img/nav-arrow.svg");
       }
+      &:hover {
+        transform: translateY(3px);
+        transition: transform 0.1s;
+        &::after {
+          content: url("/src/img/nav-arrow-red.svg");
+        }
+      }
     }
     &-button-next {
       @include Flex(flex-end, row, stretch);
@@ -44,6 +51,14 @@
       &::after {
         content: url("/src/img/nav-arrow.svg");
         transform: rotate(180deg);
+      }
+      &:hover {
+        transform: translateY(3px);
+        transition: transform 0.1s;
+        &::after {
+          content: url("/src/img/nav-arrow-red.svg");
+          transform: rotate(180deg);
+        }
       }
     }
   }
