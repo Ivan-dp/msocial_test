@@ -14,17 +14,21 @@ menuButton.addEventListener("click", function () {
 });
 
 var logInButton = document.querySelector(".log-in-btn");
-var logIn = document.querySelector(".popup-log-in");
+var popup = document.querySelector(".popup");
+var popupClose = document.querySelector(".popup__close");
 
 var signInButton = document.querySelector(".sign-in-btn");
-var signIn = document.querySelector(".popup-sign-in");
 
 logInButton.addEventListener("click", function () {
   logInButton.classList.toggle("log-in-btn-active");
-  logIn.classList.toggle("popup-log-in-active");
+  popup.classList.toggle("popup-active");
+});
+
+popupClose.addEventListener("click", function () {
+  popup.classList.remove("popup-active");
 });
 
 signInButton.addEventListener("click", function () {
   signInButton.classList.toggle("sign-in-btn-active");
-  signIn.classList.toggle("popup-sign-in-active");
+  popup.classList.toggle("popup-active");
 });
