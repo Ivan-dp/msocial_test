@@ -1,7 +1,7 @@
-mixin card(img, desc, classname='', price='')
+mixin card(img, desc, classname='', price='', srcset)
     div(class= classname+'__card')(class!=attributes.class)
         div(class= classname+'__picture')
-            img(src= img)
+            img(src= img)(srcset= srcset)
         div(class= classname+'__description')
             p= desc 
             p= price
