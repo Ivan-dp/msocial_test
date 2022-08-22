@@ -51,7 +51,7 @@ module.exports = {
         test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
         loader: "file-loader",
         options: {
-          name: "./dist/icons/[name].[ext]",
+          name: "./icons/[name].[ext]",
         },
       },
 
