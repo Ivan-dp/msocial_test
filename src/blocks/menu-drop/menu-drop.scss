@@ -16,7 +16,7 @@
   .nav,
   .info {
     @include Flex(space-between, column, baseline);
-    width: 85px;
+    width: 100px;
     margin: 25px auto 25px 20px;
   }
   .nav {

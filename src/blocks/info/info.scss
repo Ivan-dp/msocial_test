@@ -2,11 +2,11 @@
   @include Flex(space-between, row, center);
   width: 353px;
   height: 21px;
-  li {
-    list-style-type: none;
-    a {
+  a {
+    text-decoration: none;
+    li {
       @include PFDinTextCondPro("Medium", 16, 21);
-      text-decoration: none;
+      list-style-type: none;
       color: $secondary-color-text;
     }
   }
