@@ -1,5 +1,7 @@
-.action-rules
+// Использую id для навигации по сайту с помощью nav
+.action-rules#rules
     .container
+        // Использую миксин card и передаю в каждый card путь до изображения и описание
         +card(require('/src/img/step1.svg'), 'Покупайте сыр Oltermanni', 'action-rules')
         .action-rules__wrap
             .action-rules__arrow-right  

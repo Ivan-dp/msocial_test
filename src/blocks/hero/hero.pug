@@ -5,7 +5,9 @@
     .hero__ellipse
         .container
             .hero__cheese-home 
+                // Подключаю svg изображение
                 include ../../img/cheese_home.svg
+            // Наполняю блок изображениями подключенными с учётом retina-ready
             img.hero__trade-mark(src=require("/src/img/trade_mark.webp").default, srcset='/src/img/trade_mark@2x 2x'.default alt="trade_mark.webp")
             img.hero__prize(src=require("/src/img/prize.webp").default, srcset='/src/img/prize@2x 2x'.default alt="prize.webp")
             img.hero__kitchen(src=require("/src/img/kitchen.webp").default, srcset='/src/img/kitchen@2x 2x'.default alt="kitchen.webp")
