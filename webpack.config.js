@@ -10,14 +10,12 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    // contentBase: path.resolve(__dirname, "./dist"),
     open: true,
     compress: true,
     hot: true,
     port: 8080,
   },
   entry: {
-    // index: path.resolve(__dirname, "./src/index.js"),
     index: "./src/pages/index/index.js",
   },
   output: {
@@ -36,6 +34,7 @@ module.exports = {
   module: {
     rules: [
       // JavaScript
+
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -43,10 +42,7 @@ module.exports = {
       },
 
       // изображения
-      // {
-      //   test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
-      //   type: "asset/resource",
-      // },
+
       {
         test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
         loader: "file-loader",
@@ -55,36 +51,22 @@ module.exports = {
         },
       },
 
-      //   {
-      //     test: /\.(jpg|png)$/,
-      //     use: {
-      //       loader: 'url-loader',
-      //     },
-      //   },
-
       // шрифты и SVG
+
       {
         test: /\.(woff|eot|ttf|svg|)$/,
         type: "asset/inline",
       },
 
       // CSS, PostCSS, Sass
+
       {
         test: /\.(scss|css)$/,
-        // exclude: /node_modules/,
         use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
       },
-      // {
-      //   test: /\.scss$/,
-      //   exclude: /node_modules/,
-      //   use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
-      // },
-      // {
-      //   test: /\.css$/,
-      //   use: ["style-loader", "css-loader", "postcss-loader"],
-      // },
 
       // pug
+
       {
         test: /\.pug$/,
         use: {
